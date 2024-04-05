@@ -1,0 +1,349 @@
+/* This is how you write comment in CSS */
+
+*{/* The astrisk used here as a CSS selector is used to referr to all and every element in the HTML documnet,
+and any CSS that we write here applies to the entire document */
+
+padding: 0px;
+margin: 0px;
+/* This is a reset is written as */
+/* By specifying the Padding/Margin for all elements to be zero,The Padding/Margin of all 
+elements will  be changed from their default values to zero. This is called a reset */
+
+}
+
+body{
+/* This is how to write Css for a certain tag and refer to it*/
+	background-color: #f4f4f4;
+	/* this propery value pair will specify the background colour of the webpage */
+	color: #000000;
+	/* this property value pair will specify the colour of all and ny text that we write within the webpage, unless we 
+	specify otherwise */
+}
+
+#paragraph1 { /* To refer to a praticular id in CSS we put a # before it's name like this (#id_name) */ 
+
+
+	font-family: "Comic Sans MS", Ariel, Cursive;
+	/* We can mention multiple fonts, each one seperated by a comma, so that in the event
+	 that a font doesn't get added/ or does not load, the next one will. The default font-family is 'times new roman'*/
+	 /* We include the double quotes around Comic Sans MS since it is a single word and can get confused as three seperate words*/
+	 font-size: 20px;
+	 /* The default font size will be 16pixels, we can also use em */
+	 font-weight: bold;
+	 /* We may also use a number instead of a string in order to signify the 
+	 intersity of boldness. The default value is 'normal'*/
+	 /* We may also express all the above using one single property, i.e the font property,
+	 and the values of this property will the same values of the previous font related properties */
+	 /* Same as above */
+	 font:"Comic Sans MS", Ariel, Cursive 20px bold;
+
+	 /* The above is all about fonts, but now the below is going to be about the differet Text Formatting Styles in CSS*/ 
+
+	 text-decoration: underline;
+	 /* This is the text decoration. This is mainly used to specify where and how lines a placed in the text, since the text can 
+	 underlined, overlined or crossed through*/
+	 text-transform: uppercase;
+	 /* This is used to convert the text into all Capital letter or all Lowercase letters*/
+	 text-align: center;
+	 /* This specifies the alignment/placement of the text with respect to the edges of the webpage. The text can be aligned
+	 in the center, or at the right/left*/
+	 letter-spacing: 0.2 em;
+	 /* This is the spacing between successive letters. This is specified in either em or pixels. */
+	 word-spacing: 1em;
+	 /* This is the spacing between each successive word. This too is specified in terms of em or pixles*/
+
+	 line-height: 2.0em;
+	 /* em is a unit of lenght measurement in Css, usually 16px = 1 em, however 
+	 that may vary from place to place because em is converted to pixels based on a formula 
+	 that uses constatnts (Like the general common value of pixels used in that place), whose values change place to place. 
+	 The default line height is dependent on the font size and is about 20% larger that the font size */
+}
+
+.block_1{ /* To refer to a praticular class in CSS we put a . before it's name like this (.clas_name) */
+	background-color: #333; /* Bonus Tip: if the the hexadecimal number that you are using to specify the colour is 
+consisting of six repeating hexadecimal values (like  #aaaaaa) then as a shortcut you can simply write only the first three 
+hexadecimal values after the # symbol (like #aaa) and the interpreter will understand it as the same and you will specify the same colour */
+	color:#fff;
+	padding-top: 20px; /* This is how you specify padding for the top part of the content, you may do it in em or pixels */
+	padding-right: 8px;/* This is how you specify padding for the right part of the content, you may do it in em or pixels */
+	padding-left: 4px;/* This is how you specify padding for the bottom part of the content, you may do it in em or pixels */
+	padding-bottom: 2px;/* This is how you specify padding for the left part of the content, you may do it in em or pixels */
+	/* Same as above */
+	padding:20px 8px 4px 2px; /* This is a much shorter way to add padding, in this way, you simply write padding as the property
+	and you list out the desired padding values. The order of padding values that you specify is as follows - Top, Right, Left, Bottom.
+	You can remember this as thinking that you must specify the values in a clockwise manner */
+	/* Another way to specify padding is that we can specify padding as the property and then write two values, one for top/bottom, 
+	and one for left/right in that order respectively (padding: 2px 10px ;). When we specify only two sides(top and right), the padding for the other two sides
+	(left and right) automatically gets specified and is also taken as the same two values */
+	/* A final shorter way to specify padding is to just write padding as the property and then enter one padding value (padding: 10px ;) 
+	This methord will give the entire content the same/equal amount of the specified padding for all four sides of the content, and is a nice shorthand way to specify padding 
+	for all sides at once, rather than mention and write padding for each side seperately*/
+
+	/* Border */
+	border-top: 20px red double; /* This is how you specify border for the top part of the content, you may specify the width of the border in em or pixels, 
+	Then specify the colour of the border, then the type of border */
+	border-right: 8px blue dotted;/* This is how you specify border for the right part of the content, you may specify the width of the border in em or pixels, 
+	Then specify the colour of the border, then the type of border */
+	border-left: 4px yellow dashed;/* This is how you specify border for the bottom part of the content, you may specify the width of the border in em or pixels, 
+	Then specify the colour of the border, then the type of border */
+	border-bottom: 2px green solid;/* This is how you specify border for the left part of the content, you may specify the width of the border in em or pixels, 
+	Then specify the colour of the border, then the type of border */
+	/* Shorter way */
+	/* border: 20px pink ridge ;  This is a much shorter way to add border, in this way, you simply write the width of the border for all the sides, the colour of 
+	the entire border and the style of entire border in the successive order. */
+	/* border-radius: 15px; This CSS property for the border will give you rounded corners on a border, and the value we give for that 
+	property is the radius of the curvature we want for those curved edges 
+	/* border-width: 9px; This is a quick way to specify border width for all the sides of the border */
+	/* border-style: groove; This is a quick way to specify border style for all the sides of the border */
+	/* border-bottom-width: 9px; A property in this format (border-side-width) can be used to change the border width at a specific side */
+	/* border-top-style: inset; A property in this format (border-side-style) can be used to change the border style at a specific side */
+
+	/* Margin */
+	margin-top: 20px; /* This is how you specify margin for the top part of the content, you may do it in em or pixels */
+	margin-right: 8px;/* This is how you specify margin for the right part of the content, you may do it in em or pixels */
+	margin-left: 4px;/* This is how you specify margin for the bottom part of the content, you may do it in em or pixels */
+	margin-bottom: 2px;/* This is how you specify margin for the left part of the content, you may do it in em or pixels */
+	/* Same as above */
+	margin:20px 8px 4px 2px; /* This is a much shorter way to add margin, in this way, you simply write margin as the property
+	and you list out the desired margin values. The order of margin values that you specify is as follows - Top, Right, Left, Bottom.
+	You can remember this as thinking that you must specify the values in a clockwise manner */
+	/* Another way to specify margin is that we can specify margin as the property and then write two values, one for top/bottom, 
+	and one for left/right in that order respectively (margin: 2px 10px ;). When we specify only two sides(top and right), the margin for the other two sides
+	(left and right) automatically gets specified and is also taken as the same two values */
+	/* Another way to specify margin is to simply write the syntax 'auto' as the value for the property margin. This cause an even amount of margin to be given to the
+	element so that the element is located at the center of the web page, and will cause the margin to automatically change everytime the webpage changes size, so that 
+	the elemnt is always at the center.*/
+	/* A final shorter way to specify margin is to just write margin as the property and then enter one margin value (margin: 10px ;) 
+	This methord will give the all four sides of the entire content the same/equal amount of the padding that is specified, and is a nice shorthand way to specify padding 
+	for all sides at once, rather than mention and write padding for each side seperately*/
+
+
+
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover { /* Since hyperlink tags can exist in different states, to select a certain state for the hyperlink tag, we simply write 'a',
+ then a semicolon, followed by the name of the particular state that we want to write CSS for (Like a:statename). We do not include any spaces when writing this selector*/
+ /* 'hover' is the state in which the mouse is hovering over the hyperlink*/
+	color: green;
+	font-family: cursive;
+}
+
+a:active { 
+ /* 'active' is the state in which the mouse is actively clicking on the link*/
+	color: blue;
+	font-family: "Comic Sans MS" ;
+}
+
+a:visited { 
+ /* 'visited' is the state in which the hyperlink has been visited atleast once*/
+	color: red;
+	font-family: serif;
+}
+
+
+.list_1{
+	border: 5px rgb(9, 237, 214) solid;
+	border-radius: 20px;
+}
+
+
+.list_1 ul{ /* To refer to a particlular tag within a specific class, we can first mention the specific class the tag is in, 
+ and then specify the type of tag, by writing the particular tag's name after a space. This allows us to target the a particular set of 
+ tags within a class */
+	padding: 20px;
+	list-style: asterisks; /* This is the syntax for specifying the style (shape) of the bullet points used in an unordered list. The valeus of the property can be any
+	acceptable shape like circle, square, astrisk etc. It is also possible to remove the bullet points, by placing a value of 'none' */
+	list-style-image: url(/Users/raghuvadyalam/Downloads/Homework/Smiley.jpeg); /* This is also the syntax for specifying the style of the bullet points used in an unordered 
+	list, however this property is used when we want the bullet points to be an image rather than a shape. The value of the property is either the URl of the image on the internet or
+	the path of the image on your machine*/
+
+}
+
+
+
+.list_1 h1 {
+	text-align: center;
+}
+
+.form_1{
+	padding: 40px;
+}
+
+.form_1 .field{ /* To refer to a particular class within a class, we must first mention the outermost class name, by typing a . followed by outer class name (like this .class_name)
+then we must follow that by a space and another . finishing with the innermost class name (like .outer_class .inner_class). Alternatively we can simply write the inner class name with
+a . before it (like .inner-class)*/
+	padding: 10px;
+}
+
+.form_1 label{
+	display: block; /* This is the property used to make an element is a block level or inline element. To change do this we need to use the diaplay property 
+	and give it a value of either block for block level or inline for inline elemnt*/
+	font-family: 'Comic sans MS';
+}
+
+
+.form_1 input[type=text], .form_1 textarea{ /* We can write CSS code that applies to multiple selectors, by simply typing the selectors and seperating each with a comma (,)*/
+	width: 50%;
+	color: blue;
+	padding: 10px;
+
+}
+
+.form_1 input[type=email]{ /* Since some tags can have different attributes, to write code for to a tag under a specific attribute, we simply type the tag's name 
+followed by a set of square brackets containing the specific attribute of the tag within them (like this tag_name[attribute_name = attribute_value])*/
+	width: 10%;/* The width property defines the width of the element. The value of the property is the desired width of the element in pixels, em or
+	as a percentage of the total horizontal width. */
+	color: grey ;
+	padding: 5px; /* The padding for an input tag is kind of like the height of the text box in the input tag. */
+}
+
+.form_1 input[type=submit]{
+	background-color: Black;
+	color: whitesmoke;
+	font-family: 'Comic Sans MS';
+}
+
+.form_1 input[type=submit]:active{ /* Just like a hyperlink the submit button in the imput tag can exist in different states and hence, we can write CSS for a specific state
+just like how we did for the hyperlink tag. The same states exist for the submit button as a hyperlink tag */
+	background-color: whitesmoke;
+	color: black;
+	font-family: 'Comic Sans MS';
+}
+
+.Box_1{
+	 background-color: tomato;
+	 padding: 10px;
+	 border: 1px black solid;
+	 float: left; /* This is how you float elements to the left. By typing this every single element that follows this element will be placed to the right of this rather than 
+	 beginning on a new line, even for the block level elements that succede this element and take up the entire width of the webpage, they will no longer do that and instead
+	 be placed to the right. We can think of this as if all the elements are gravitating to the top left hand side of the webpage, and therefore, the value for the float property 
+	 is 'left'. If we want the elements to gravitate towards the right of the webpage and be placed to the left the element then we can use the value 'right'*/
+	 width: 33.3%;
+	 height: 341px;
+	 box-sizing: border-box; /* Since width by default does not consider any padding/margin/border as a part of it and is only the horizontal distance that the element 
+	 takes up without any padding, border or margin, By typing this, the definition of width in CSS gets changed. The property of box-sizing determines what is considered as
+	 width in CSS, and by giving it a value of border-box, the width from now on gets considered as the total horizontal distance that the element takes up with padding, border or margin.
+	 This property basically changes what is considered as a box size in CSS.*/
+
+
+}
+
+#image_1{
+	float: right;
+	width: 65%;
+
+}
+
+#Side_Content{
+	background-color: tomato;
+	padding: 10px;
+	border: 1px black solid;
+	height: 488px;
+	width: 35%;
+	box-sizing: border-box;
+}
+
+.clr{
+	clear: both; /* This is how you get rid of the floating flow. Since once you make an element float, every other element that follows it gets placed to the right or left
+	of it, to make elements stop floating, you can use the 'clear' property to clear any floating you've included for elements and stop the current element which has this 
+	property from following the floating pattern, baically this property resets it back to normal flow. The values for this property are left, right or both and using a particular
+	value for the clear property clears that particular float*/
+}
+
+.Box_2{
+	padding: 40px;
+	margin: 40px;
+	width: 80%;
+	height: 500px;
+	border: 1px solid black;
+	color: Blue;
+	background-image: url(/Users/raghuvadyalam/Downloads/Homework/batman-arkham-knight-game-wallpaper-preview.jpeg); /* This is how you make the background image of a container 
+	(a container refers to a webpage or a div block) as an image. Just like how we can change background colour or a tag or webpage, similarly, we can make the background as an image, with 
+	the proerty 'background-image'. The value for this property is the synatx url(), with the URlor file path of the image in the brackets*/
+	background-position: 200px 100px;/* The background image that we specify will naturally be placed on the top left most side of the container, however if we wish to change the position of the
+	background image then we use the property 'background-position'. There are two values given to this property, each seperated by a space, the first is the amount of pixels that the background 
+	image is pushed from the left most edge of the container i.e the number of pixels that the image moves to the right from the left most edge of the border, and the second is the amount of pixels that the background 
+	image is pushed from the top most edge of the container i.e the number of pixels that the image moves to the down from the top most edge of the border. It is also important to note that the background image repeats 
+	it's self both horixontally and vertically if the image is too small or if we position the image in such a way so that the part of the image is outside of/cut of by, the container */
+	background-repeat: no-repeat;/* The background image of a container will repeat it's self both horizontally and vertically if the image is too small for the container or if it shifted so that 
+	parts of it exceed the boundary of the container. if we don't want the image to repeat it's self then we use the property 'background-repeat' and give it the value of no-repeat */
+}
+
+.Box_3{
+	width: 80%;
+	height: 500px;
+	padding: 40px;
+	margin: 40px;
+	border: 1px solid black;
+	position: relative; /* This is how you specify the tyoe of positioning of an element. We use the position property and the value of the property is they desired type of positioning that we want to
+	give to the element. In this case the value for the position property is 'relative', which makes the given element the specific element relative to which all other elements are positioned. This value is 
+	usually given to container elements, since elements inside them can be positioned with respect to the container. By default the body tag is given the value of relative for the position property, 
+	while all other tags have a default property of static for the position tag.*/
+}
+
+.Box_3 h1{
+	position: absolute; /* In this case this element has been given a value of absolute for the position property, this value allows us to specify the position of an element with respect to 
+	another element that has the relative position value. This value usually is given to other elements in a container element since, those element's position can be specified with respect to
+	the container. The exact location of the element can be specified with the 'top', 'bottom', 'right', and 'left' properties, whose values are the distances we want the element to be from the respective edge of the container*/
+	bottom: 75px; /* This is one of the properties used to specify the the position of an elememt in a container after a type of positioning has been selected. This particular property is the
+	bottom property whose value is the horizontal distance of the element from the bottom edge of a container in pixels*/
+	left: 500px; /* This is one of the properties used to specify the the position of an elememt in a container after a type of positioning has been selected. This particular property is the
+	left property whose value is the vertical distance of the element from the left edge of a container in pixels*/
+}
+
+
+.Box_3 h2{
+	position: absolute;
+	top: 75pxpx;/* This is one of the properties used to specify the the position of an elememt in a container after a type of positioning has been selected. This particular property is the
+	top property whose value is the horizontal distance of the element from the top edge of a container in pixels*/
+	right: 100px; /* This is one of the properties used to specify the the position of an elememt in a container after a type of positioning has been selected. This particular property is the
+	right property whose value is the vertical distance of the element from the right edge of a container in pixels*/
+}
+
+.fixed-position{
+	background-color: beige;
+	border: 1px solid green;
+	padding: 10px;
+	position: fixed; /* In this case the element has been given a value of fixed for the position property, this value allows us to set a fixed position of the element on the screen, no matter
+	how much we scroll down or move the webpage, as if the element is fixed at a certain position of the screen.  The exact location of the element on the screen can be specified with the 'top', 
+	'bottom', 'right', and 'left' properties, whose values are the distances we want the element to be from the respective edges in the container*/
+	top: 200px;
+
+}
+
+.my_list{
+	padding: 50px;
+}
+
+.my_list li:first-child{ /* This is how you target the first list item using pseudo classes. We first target the set of all list items in the CSS selector, the we place a colon (:), followed by the 
+keyword first-child. Doing this targets only the first list item in a list and allows us to write CSS for only it*/
+	background: red;
+}
+
+
+.my_list li:last-child{ /* This is how you target the last list item using pseudo classes. We first target the set of all list items in the CSS selector, the we place a colon (:), followed by the 
+keyword last-child. Doing this targets only the last list item in a list and allows us to write CSS for only it*/
+	background: blue;
+}
+
+.my_list li:nth-child(5){ /* This is how you target a particular positioned list item using pseudo classes. We first target the set of all list items in the CSS selector, the we place a colon (:), followed by the 
+keyword lnth-child(). We then enter the position of the desired list item in the brackets, for instance if it is the 5th list item, then we put 5 in the brackets. Doing this targets only the particular list item in a l
+ist and allows us to write CSS for only it*/
+	background: blue;
+	background: green;
+}
+
+.my_list li:nth-child(even){ /* This is how you target a particular set of positioned list item using pseudo classes. We first target the set of all list items in the CSS selector, the we place a colon (:), followed by the 
+keyword lnth-child(). We then enter the keyword even in the brackets if we want every even positioned list item to be targeted, or we enter the keyword odd if we want every off positioned list item to be targeted.
+ Doing this targets only the a particular set of list items in a list and allows us to write CSS for only them*/
+	background: yellow;
+}
+
+#headingtag2 {
+	color:green;
+}
